@@ -11,19 +11,6 @@ class Post extends React.Component {
     this.content = props.content;
   }
 
-  state = {
-    clicks: 0
-  };
-
-  incrementarClick = () => {
-    this.setState({ clicks: this.states.clicks + 1 });
-  };
-
-  foiClicado = () => {
-    this.incrementarClick();
-    this.props.foiClicado();
-  };
-
   render() {
     return (
       <div className="post">
