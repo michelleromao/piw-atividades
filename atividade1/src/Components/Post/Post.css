@@ -1,0 +1,60 @@
+.post {
+  padding: 3% 3% 0 3%;
+  margin-top: 2.5%;
+  width: 93.8%;
+  border-radius: 10px;
+  border: solid 1px #00a73e;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  font-family: sans-serif;
+  color: #28696d;
+}
+.post:last-child {
+  margin-bottom: 5%;
+}
+
+.postUser {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.username {
+  font-weight: 600;
+  margin-left: 2%;
+  align-self: flex-start;
+}
+
+.contentPost {
+  margin-top: 2%;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: left;
+}
+
+.line {
+  margin-top: 2%;
+  width: 95%;
+  align-self: center;
+  border: solid 1px #00a73e;
+}
+
+.likeContent {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 6%;
+  align-self: flex-end;
+  margin: 2% 0 2% 0;
+}
+
+.likeicon {
+  width: 55%;
+}
+
+.likes {
+  margin-top: 15%;
+}
