@@ -51,8 +51,12 @@
   margin: 2% 0 2% 0;
 }
 
+.buttonLike {
+  background-color: transparent;
+  border: 0px solid transparent;
+}
 .likeicon {
-  width: 55%;
+  width: 85%;
 }
 
 .likes {

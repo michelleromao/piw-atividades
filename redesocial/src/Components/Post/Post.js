@@ -19,7 +19,9 @@ class Post extends React.Component {
         <div className="contentPost">{this.props.content}</div>
         <div className="line"></div>
         <div className="likeContent">
-          <img src={Like} alt="" className="likeicon" />
+          <button className="buttonLike">
+            <img src={Like} alt="" className="likeicon" />
+          </button>
           <span className="likes">3</span>
         </div>
       </div>
