@@ -6,9 +6,24 @@ import Like from "../../images/like.svg";
 class Post extends React.Component {
   constructor(props) {
     super(props);
+    this.id = props.id;
     this.name = props.name;
     this.content = props.content;
   }
+
+  state = {
+    clicks: 0
+  };
+
+  incrementarClick = () => {
+    this.setState({ clicks: this.states.clicks + 1 });
+  };
+
+  foiClicado = () => {
+    this.incrementarClick();
+    this.props.foiClicado();
+  };
+
   render() {
     return (
       <div className="post">
@@ -19,10 +34,10 @@ class Post extends React.Component {
         <div className="contentPost">{this.props.content}</div>
         <div className="line"></div>
         <div className="likeContent">
-          <button className="buttonLike">
+          <button className="buttonLike" onClick>
             <img src={Like} alt="" className="likeicon" />
           </button>
-          <span className="likes">3</span>
+          <span className="likes">0</span>
         </div>
       </div>
     );
