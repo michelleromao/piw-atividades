@@ -4,12 +4,25 @@ import Avatar from "../../images/girl.png";
 import Like from "../../images/like.svg";
 
 class Post extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
     this.id = props.id;
     this.name = props.name;
     this.content = props.content;
   }
+*/
+  state = {
+    clicks: 0
+  };
+
+  click = () => {
+    this.setState({ clicks: this.state.clicks + 1 });
+  };
+
+  was_Clicked = () => {
+    this.click();
+    this.props.wasClicked(this.state.clicks);
+  };
 
   render() {
     return (
@@ -21,10 +34,10 @@ class Post extends React.Component {
         <div className="contentPost">{this.props.content}</div>
         <div className="line"></div>
         <div className="likeContent">
-          <button className="buttonLike" onClick>
+          <button className="buttonLike" onClick={this.was_Clicked}>
             <img src={Like} alt="" className="likeicon" />
           </button>
-          <span className="likes">0</span>
+          <span className="likes">{this.state.clicks}</span>
         </div>
       </div>
     );
