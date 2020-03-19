@@ -12,7 +12,8 @@ class Post extends React.Component {
   }
 */
   state = {
-    clicks: 0
+    clicks: 0,
+    id: 0
   };
 
   click = () => {

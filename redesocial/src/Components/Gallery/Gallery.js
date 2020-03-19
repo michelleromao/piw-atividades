@@ -26,6 +26,10 @@ class Gallery extends React.Component {
     ]
   };
 
+  getIdPost = idposts => {
+    console.log("Received from " + idposts);
+  };
+
   getClick = clicks => {
     console.log(
       "Received from " +
@@ -45,7 +49,8 @@ class Gallery extends React.Component {
               key={post.id}
               name={post.name}
               content={post.content}
-              wasClicked={this.getClick(post.id)}
+              wasClicked={this.getClick}
+              idPost={post.id}
             ></Post>
           ))}
         </div>
