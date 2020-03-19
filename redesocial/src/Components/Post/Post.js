@@ -12,8 +12,7 @@ class Post extends React.Component {
   }
 */
   state = {
-    clicks: 0,
-    id: 0
+    clicks: 0
   };
 
   click = () => {
@@ -22,6 +21,7 @@ class Post extends React.Component {
 
   was_Clicked = () => {
     this.click();
+    this.props.getId(this.props.id);
     this.props.wasClicked(this.state.clicks);
   };
 
