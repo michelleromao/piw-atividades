@@ -37,7 +37,6 @@ class Gallery extends React.Component {
         this.setState({
           posts: [posts.qtdLikes, (posts.qtdLikes += 1)]
         });
-        console.log(`likes recebido aqui oh ${posts.qtdLikes}`);
       }
     });
   };
