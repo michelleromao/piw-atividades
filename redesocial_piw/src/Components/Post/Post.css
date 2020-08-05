@@ -52,8 +52,15 @@
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+HeartIcon#heartIcon {
+  transition: 10s;
 }
 
+#heartIcon:hover {
+  fill: #af847b;
+}
 .likes {
   font-family: Comfortaa;
   font-style: normal;

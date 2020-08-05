@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Post.css";
-import HeartIcon from "../../images/Heart.png";
+import { ReactComponent as HeartIcon } from "../../images/icons/heart.svg";
 
 function Post(props) {
   let [likeNumber, setLike] = useState(props.qtdLikes);
@@ -10,10 +10,11 @@ function Post(props) {
     setLike(click);
   }
 
-  let was_Clicked = () => {
+  let was_Clicked = (e) => {
     click();
     props.getId(props.id);
     props.wasClicked(likeNumber);
+    e.target.setAttribute("fill", "#985A4D");
   };
 
   return (
@@ -32,7 +33,7 @@ function Post(props) {
             </div>
 
             <button className="buttonLike">
-              <img src={HeartIcon} alt="like" onClick={was_Clicked} />
+              <HeartIcon id="heartIcon" onClick={was_Clicked} />
               <span className="likes">{likeNumber}</span>
             </button>
           </div>

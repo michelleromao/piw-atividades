@@ -1,12 +1,11 @@
 .btn1 {
+  cursor: pointer;
   outline: none;
-
   width: 140px;
   height: 36px;
   background: rgba(152, 90, 77, 0.7);
   border: 0px solid;
   border-radius: 15px;
-
   text-transform: uppercase;
   font-family: Catamaran;
   font-style: normal;
