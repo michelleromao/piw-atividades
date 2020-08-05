@@ -1,0 +1,85 @@
+* {
+  scroll-behavior: smooth;
+}
+.bodyPost {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 953px;
+  height: 216px;
+  background: #f4f3ee;
+  border: 1px solid rgba(152, 90, 77, 0.2);
+  box-sizing: border-box;
+  box-shadow: 14px 7px 16px rgba(45, 46, 50, 0.1);
+  border-radius: 10px;
+}
+
+.firstContent,
+.secondContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
+.userPost {
+  display: flex;
+  align-items: center;
+  margin-left: 39px;
+}
+.postOwner {
+  margin-left: 22px;
+  font-size: 13px;
+  font-family: Catamaran;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  color: #985a4d;
+}
+
+.buttonLike {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+  margin-right: 39px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.likes {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 14px;
+  color: #985a4d;
+}
+
+.line {
+  width: 100%;
+  height: 0.1px;
+  border: 0.5px solid rgba(152, 90, 77, 0.1);
+}
+
+.secondContent {
+  margin-left: 39px;
+}
+.postText {
+  font-family: Catamaran;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(45, 46, 50, 0.8);
+}
+.postText p {
+  width: 90%;
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Comfortaa&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #e9e5df;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 954px;
+  height: 105px;
+  margin: 0 6.1875em 0 6.1875em;
+}
+
+.logoname {
+  font-family: "Comfortaa", cursive;
+}
+.logoname a {
+  font-weight: 500;
+  font-size: 1em;
+  color: #2d2e32;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.menuBar li {
+  font-family: Catamaran;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.85em;
+  line-height: 20px;
+}
+
+.menuBar li a {
+  color: #985a4d;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.user .userName {
+  font-family: Catamaran;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125em;
+  line-height: 21px;
+  color: #985a4d;
+}
+
+.linkToPublish {
+  cursor: pointer;
+}

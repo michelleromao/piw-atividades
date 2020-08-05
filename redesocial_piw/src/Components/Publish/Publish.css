@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Comfortaa&display=swap");
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #e9e5df;
+  height: 113px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+.publishBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 954px;
+  height: 66px;
+  background: #f4f3ee;
+  border: 1px solid rgba(152, 90, 77, 0.2);
+  box-sizing: border-box;
+  box-shadow: 14px 7px 16px rgba(45, 46, 50, 0.1);
+  border-radius: 10px;
+}
+
+.publishBar div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.publishBar input {
+  width: 650px;
+  padding-left: 20px;
+  background: #f4f3ee;
+  outline: none;
+  border: 0.5px solid transparent;
+  color: rgba(45, 46, 50, 0.8);
+}
+
+.publishInput::-webkit-input-placeholder {
+  color: rgba(45, 46, 50, 0.5);
+}
+
+.publishInput:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(45, 46, 50, 0.5);
+}
+
+.publishInput::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(45, 46, 50, 0.5);
+}
+
+.publishInput:-ms-input-placeholder {
+  color: rgba(45, 46, 50, 0.5);
+}
